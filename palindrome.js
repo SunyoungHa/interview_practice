@@ -1,11 +1,18 @@
-// Write a function that takes a string, s, as an input and determines whether or not it is a palindrome.
-// source https://www.educative.io/courses/grokking-coding-interview-patterns-javascript/valid-palindrome
+function isPalidrom(num) {
+	const strNum = num.toString();
 
-// dad, radar, racecar, kayak
+	let count = strNum.length - 1;
+	for (let i = 0; i < strNum.length / 2; i++) {
+		if (strNum[i] !== strNum[count]) {
+			return false;
+		}
+		count--;
+	}
 
-function palindrome(s) {
-    for (i ; i<s.length; i++) {
-        if s[i]===s[-1];
-        return true 
-    }
+	return true;
 }
+
+console.log(isPalidrom(121));
+console.log(isPalidrom(200));
+
+// https://app.coderpad.io/JMZXP9XC

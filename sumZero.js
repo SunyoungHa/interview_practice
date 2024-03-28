@@ -1,3 +1,5 @@
+// source: udemy js-algorithms-and-data-structures-masterclass
+
 function sumZero2(arr2) {
 	const arr = arr2.sort();
 	let left = 0;

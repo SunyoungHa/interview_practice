@@ -1,3 +1,5 @@
+// source: udemy js-algorithms-and-data-structures-masterclass
+
 function countUniqueValues(arr1) {
 	const arr = arr1.sort();
 
